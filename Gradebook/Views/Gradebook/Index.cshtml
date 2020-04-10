@@ -1,1 +1,32 @@
-<h1 class="title is-1">Hello from view with style</h1>
+@using Gradebook.Models
+<h3 class="title is-3">Info about CSSE-1704K group</h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            <abbr title="Hash">Hash</abbr>
+        </th>
+        <th>Full Name</th>
+        <th>
+            <abbr title="Date of Birth">Date of Birth</abbr>
+        </th>
+        <th>
+            <abbr title="Group">Group</abbr>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var std in (List<Student>) ViewData["students"])
+    {
+        <tr>
+            <th>2</th>
+            <td>
+                <a href="#" title="">@std.FullName</a>
+            </td>
+            <td>@std.DOB</td>
+            <td>@std.Group</td>
+        </tr>
+    }
+    </tbody>
+</table>
