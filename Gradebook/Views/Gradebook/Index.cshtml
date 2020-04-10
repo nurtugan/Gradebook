@@ -20,7 +20,7 @@
     @foreach (var std in (List<Student>) ViewData["students"])
     {
         <tr>
-            <th>2</th>
+            <th>@std.ID</th>
             <td>
                 <a href="#" title="">@std.FullName</a>
             </td>
