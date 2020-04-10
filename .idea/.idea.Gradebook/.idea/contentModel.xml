@@ -10,6 +10,10 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="GradebookController.cs" t="Include" />
+          <e p="StudentDetails.cs" t="Include" />
+        </e>
+        <e p="Database" t="Include">
+          <e p="Database.cs" t="Include" />
         </e>
         <e p="Gradebook.csproj" t="IncludeRecursive" />
         <e p="Models" t="Include">
@@ -34,6 +38,9 @@
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
+          </e>
+          <e p="StudentDetails" t="Include">
+            <e p="StudentDetails.cshtml" t="Include" />
           </e>
         </e>
         <e p="wwwroot" t="Include">

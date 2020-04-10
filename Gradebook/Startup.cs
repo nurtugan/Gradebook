@@ -29,6 +29,11 @@ namespace Gradebook
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Gradebook}/{action=Index}/{id?}");
+                
+                routes.MapRoute(
+                    name: "hash",
+                    template: "student/details/{*hash}",
+                    defaults: new { controller="StudentDetails", action = "Details" });
             });
 
             app.UseStaticFiles();
