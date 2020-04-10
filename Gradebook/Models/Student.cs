@@ -15,7 +15,7 @@ namespace Gradebook.Models
             this.Group = Group;
         }
 
-        public string ID
+        public string Hash
         {
             get
             {
