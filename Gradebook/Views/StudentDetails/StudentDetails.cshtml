@@ -1,10 +1,59 @@
-@* @model object *@
-@* *@
-@* @{ *@
-@*     ViewBag.Title = "title"; *@
-@*     Layout = "_Layout"; *@
-@* } *@
-@* *@
-@* <h2>title</h2> *@
 
-<h1>Sd</h1>
+@using Gradebook.Models
+
+@{
+    var student = ViewData["student"] as Student;
+}
+
+
+<div class="field is-horizontal">
+    <div class="field-label is-normal">
+        <label class="label">Hash</label>
+    </div>
+    <div class="field-body">
+        <div class="field">
+            <p class="control">
+                <input class="input is-static" type="text" value="@student.Hash" readonly>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="field is-horizontal">
+    <div class="field-label is-normal">
+        <label class="label">Full Name</label>
+    </div>
+    <div class="field-body">
+        <div class="field">
+            <p class="control">
+                <input class="input is-static" type="text" value="@student.FullName" readonly>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="field is-horizontal">
+    <div class="field-label is-normal">
+        <label class="label">Date of Birth</label>
+    </div>
+    <div class="field-body">
+        <div class="field">
+            <p class="control">
+                <input class="input is-static" type="text" value="@student.DOB" readonly>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="field is-horizontal">
+    <div class="field-label is-normal">
+        <label class="label">Group</label>
+    </div>
+    <div class="field-body">
+        <div class="field">
+            <p class="control">
+                <input class="input is-static" type="text" value="@student.Group" readonly>
+            </p>
+        </div>
+    </div>
+</div>
