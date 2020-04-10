@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using Gradebook.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gradebook.Controllers
